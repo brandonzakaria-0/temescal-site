@@ -6,8 +6,8 @@
   "license_individual": "4587203",
   "calendly_url": "https://calendly.com/bzakaria-stanford/30min",
   "form_endpoint": "",
-  "site_url": "https://brandonzakaria-0.github.io",
-  "base_path": "/temescal-site",
+  "site_url": "https://temescal-site.pages.dev",
+  "base_path": "",
   "noindex": true,
   "show_advisers": false
 }

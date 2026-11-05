@@ -1,13 +1,13 @@
 # Temescal Insurance website
 
 Static site for Temescal Insurance (working name). Plain HTML, CSS and a little JavaScript, built by a
-small Python script with no dependencies. GitHub Pages serves the `docs/` folder.
+small Python script with no dependencies. Cloudflare Pages serves the `docs/` folder (no build command; output directory `docs`).
 
 ## Edit and publish
 
 1. Change what you need (see below).
 2. Run `python3 build.py`. It rebuilds `docs/`.
-3. Commit and push. GitHub Pages updates in a minute or two.
+3. Commit and push. Cloudflare Pages redeploys automatically in a minute or two.
 
 ## Where things live
 
@@ -29,8 +29,9 @@ so a rename or a new number is a one-line change.
 - `noindex`: `true` keeps search engines out while the site is in staging. Set to `false` at launch.
 - `form_endpoint`: where the private review and referral forms are sent (for example a Formspree form URL).
   While it is empty, the forms show visitors your phone number and Calendly link instead of submitting.
-- `base_path`: `/temescal-site` for the GitHub Pages address. Set to `""` and add `"custom_domain"` when the
-  site moves to its own domain.
+- `site_url`: the public address, used for canonical links, the sitemap and social previews. Change it when the
+  custom domain is connected.
+- `base_path`: leave as `""` when the site is served from the root of a domain.
 - `show_advisers`: turns the advisers section on the About page on, once each adviser has agreed in writing.
 
 ## Photo credits (Unsplash License)
