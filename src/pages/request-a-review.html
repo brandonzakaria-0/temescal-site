@@ -1,0 +1,200 @@
+<div style="min-height: 100vh; background: #F6F3EC; color: #1A1C19; font-family: Inter, 'Helvetica Neue', Arial, sans-serif; font-size: 17px; line-height: 1.6; display: flex; flex-direction: column">
+
+<header style="border-bottom: 1px solid #D6CEBE">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="{{base}}/" aria-label="{{brand}} Insurance, home" style="text-decoration: none; color: #1A1C19; font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-size: 21px; font-weight: 500; letter-spacing: 0.26em; text-transform: uppercase">{{brand}}</a>
+<div style="display: flex; align-items: center; gap: 24px; font-size: 14px">
+<a class="tm-hide-sm" href="tel:{{phone_tel}}" style="color: #1A1C19; text-decoration: none; font-variant-numeric: tabular-nums">Questions? {{phone}}</a>
+<a href="{{base}}/" style="color: #1A1C19; display: inline-flex; align-items: center; min-height: 44px">Exit</a>
+</div>
+</div>
+<div data-progress role="progressbar" aria-label="Progress" aria-valuemin="1" aria-valuemax="7" aria-valuenow="1" style="height: 2px; background: #E2DBCB">
+<div data-progress-bar style="height: 2px; width: 14%; background: #3F4E3A; transition: width 400ms ease"></div>
+</div>
+</header>
+
+<main id="main" style="flex-grow: 1; padding: clamp(40px, 7vw, 96px) clamp(20px, 4vw, 48px) 64px">
+<div style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+
+<form data-form="review" novalidate style="display: flex; flex-direction: column; gap: 32px">
+<span data-step-label aria-live="polite" style="font-size: 12px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: #4B4A43; font-variant-numeric: tabular-nums">Step 1 of 7</span>
+
+<section data-step="0" style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h1 class="flow-title" tabindex="-1">Where's the home?</h1>
+<p class="flow-lead">We'll use public records and wildfire data so you don't have to fill in every detail.</p>
+</div>
+<div class="field">
+<label for="address">Property address</label>
+<input class="input" id="address" name="address" type="text" autocomplete="street-address" placeholder="Street address, city" aria-describedby="address-help">
+<span id="address-help" class="help">California addresses only.</span>
+</div>
+</section>
+
+<section data-step="1" hidden>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 24px">
+<legend class="flow-title" style="padding: 0; margin: 0 0 24px">What's going on?</legend>
+<div class="choices">
+<label class="choice"><input type="radio" name="situation" value="Buying a home">Buying a home</label>
+<label class="choice"><input type="radio" name="situation" value="Got a non-renewal">Got a non-renewal</label>
+<label class="choice"><input type="radio" name="situation" value="On the FAIR Plan">On the FAIR Plan</label>
+<label class="choice"><input type="radio" name="situation" value="Rebuilding">Rebuilding</label>
+<label class="choice"><input type="radio" name="situation" value="Reviewing my coverage">Reviewing my coverage</label>
+</div>
+</fieldset>
+</section>
+
+<section data-step="2" hidden style="display: flex; flex-direction: column; gap: 24px">
+<h2 class="flow-title" data-date-question tabindex="-1">When does your current policy renew?</h2>
+<div class="field">
+<label for="key_date" data-date-label>Renewal date</label>
+<input class="input" id="key_date" name="key_date" type="date" aria-describedby="key-date-help" style="font-variant-numeric: tabular-nums">
+<span id="key-date-help" class="help" data-date-help>It's on your declarations page.</span>
+</div>
+<input type="hidden" name="key_date_type" data-date-type value="Renewal date">
+</section>
+
+<section data-step="3" hidden style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 class="flow-title" tabindex="-1">A little about the home.</h2>
+<p class="flow-lead">Keep it brief. Your broker will fill in the rest.</p>
+</div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+<legend class="group-label" style="padding: 0; margin: 0 0 10px">How is the home used?</legend>
+<div class="choices cols">
+<label class="choice"><input type="radio" name="home_use" value="Primary residence">Primary residence</label>
+<label class="choice"><input type="radio" name="home_use" value="Second home">Second home</label>
+<label class="choice"><input type="radio" name="home_use" value="Rental">Rental</label>
+</div>
+</fieldset>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+<legend class="group-label" style="padding: 0; margin: 0 0 10px">Estimated rebuild cost or home value</legend>
+<div class="choices cols" style="font-variant-numeric: tabular-nums">
+<label class="choice"><input type="radio" name="value_range" value="Under $2M">Under $2M</label>
+<label class="choice"><input type="radio" name="value_range" value="$2M to $5M">$2M to $5M</label>
+<label class="choice"><input type="radio" name="value_range" value="$5M to $10M">$5M to $10M</label>
+<label class="choice"><input type="radio" name="value_range" value="$10M+">$10M+</label>
+</div>
+</fieldset>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+<div class="field">
+<label for="square_feet">Approximate square footage</label>
+<input class="input" id="square_feet" name="square_feet" type="text" inputmode="numeric" placeholder="e.g. 6,500" style="font-variant-numeric: tabular-nums">
+</div>
+<div class="field">
+<label for="current_insurer">Current insurer <span style="font-weight: 400; color: #4B4A43">(optional)</span></label>
+<input class="input" id="current_insurer" name="current_insurer" type="text">
+</div>
+</div>
+</section>
+
+<section data-step="4" hidden style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 class="flow-title" tabindex="-1">Have your current declarations page or non-renewal notice?</h2>
+<p class="flow-lead">Add it here. A phone photo works. This step is optional.</p>
+</div>
+<label class="dropzone" for="document">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A1C19" stroke-width="1.2" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"></path><path d="M4 15v5h16v-5"></path></svg>
+<span style="font-size: 17px; font-weight: 500">Add a file or take a photo</span>
+<span class="help">PDF, JPG, PNG, or HEIC, up to 10 MB.</span>
+<input id="document" name="document" type="file" accept="application/pdf,image/*" data-file-input style="position: absolute; width: 1px; height: 1px; opacity: 0">
+</label>
+<p data-file-name hidden style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 15px"></p>
+</section>
+
+<section data-step="5" hidden style="display: flex; flex-direction: column; gap: 24px">
+<h2 class="flow-title" tabindex="-1">How should your broker reach you?</h2>
+<div class="field">
+<label for="full_name">Full name</label>
+<input class="input" id="full_name" name="full_name" type="text" autocomplete="name">
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 20px">
+<div class="field">
+<label for="email">Email</label>
+<input class="input" id="email" name="email" type="email" autocomplete="email">
+</div>
+<div class="field">
+<label for="mobile">Mobile phone</label>
+<input class="input" id="mobile" name="mobile" type="tel" autocomplete="tel" style="font-variant-numeric: tabular-nums">
+</div>
+</div>
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+<legend class="group-label" style="padding: 0; margin: 0 0 10px">Preferred way to reach you</legend>
+<div class="choices cols">
+<label class="choice"><input type="radio" name="contact_method" value="Phone call">Phone call</label>
+<label class="choice"><input type="radio" name="contact_method" value="Text">Text</label>
+<label class="choice"><input type="radio" name="contact_method" value="Email">Email</label>
+</div>
+</fieldset>
+<div class="field">
+<label for="best_time">Best time to reach you</label>
+<select class="input" id="best_time" name="best_time">
+<option>Any time</option>
+<option>Morning</option>
+<option>Midday</option>
+<option>Afternoon</option>
+<option>Evening</option>
+</select>
+</div>
+</section>
+
+<section data-step="6" hidden style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 class="flow-title" tabindex="-1">Your privacy, your choice.</h2>
+<p class="flow-lead">Neither box is required to get your options.</p>
+</div>
+<label class="consent">
+<input type="checkbox" name="consent_calls_texts" value="yes" data-consent-text="I agree that {{brand}} may call and text me about my review at the number I provided, including with automated technology. Consent is not a condition of getting options. Message and data rates may apply. Reply STOP to opt out.">
+<span>I agree that {{brand}} may call and text me about my review at the number I provided, including with automated technology. Consent is not a condition of getting options. Message and data rates may apply. Reply STOP to opt out.</span>
+</label>
+<label class="consent">
+<input type="checkbox" name="consent_share_with_referrer" value="yes" data-consent-text="If a realtor, lender, or advisor referred me, {{brand}} may share the status of my review with them.">
+<span>If a realtor, lender, or advisor referred me, {{brand}} may share the status of my review with them.</span>
+</label>
+<p style="margin: 0; font-size: 14px; color: #4B4A43">By submitting, you acknowledge our <a href="{{base}}/legal/#privacy">Privacy policy</a> and <a href="{{base}}/legal/#information-practices">Notice of information practices</a>.</p>
+</section>
+
+<p class="form-alert" data-step-error role="alert" hidden></p>
+
+<div data-nav style="display: flex; flex-direction: column; gap: 24px; padding-top: 8px">
+<div style="display: flex; flex-wrap: wrap-reverse; justify-content: space-between; align-items: center; gap: 16px">
+<button type="button" class="btn-text" data-back hidden><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4" stroke="#1A1C19" stroke-width="1.3"></path></svg>Back</button>
+<span data-back-spacer></span>
+<button type="submit" class="btn" data-next>Continue</button>
+</div>
+<p style="margin: 0; padding-top: 20px; border-top: 1px solid #D6CEBE; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: #4B4A43; font-variant-numeric: tabular-nums">
+<span>Licensed California broker</span><span aria-hidden="true">·</span><span>License #{{license_individual}}</span><span aria-hidden="true">·</span><span>Your dedicated broker reviews every application</span>
+</p>
+</div>
+</form>
+
+<section data-done hidden style="display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; align-items: center; gap: 20px">
+<img src="{{base}}/assets/img/brandon-headshot.jpg" alt="Brandon Zakaria" width="88" height="88" style="width: 88px; height: 88px; flex: none; object-fit: cover; display: block; background: #D9D1C0">
+<div style="display: flex; flex-direction: column; gap: 2px; font-size: 14px">
+<span style="font-weight: 600">Brandon Zakaria</span>
+<span style="color: #4B4A43">Your dedicated broker</span>
+<span style="color: #4B4A43; font-variant-numeric: tabular-nums">California Insurance License #{{license_individual}}</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h2 class="flow-title" tabindex="-1" data-done-title>Got it. Brandon is reviewing your home now.</h2>
+<p class="flow-lead">Here's what happens next.</p>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #1A1C19">
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #D6CEBE"><span style="font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-size: 22px; flex: none; width: 28px">1</span><span>Your broker reviews your details, public records, and wildfire data for <span data-done-address>your home</span>.</span></li>
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #D6CEBE"><span style="font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-size: 22px; flex: none; width: 28px">2</span><span>We reach out by <span data-done-contact>your preferred method</span> to talk through your situation.</span></li>
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #D6CEBE"><span style="font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-size: 22px; flex: none; width: 28px">3</span><span>You see your options side by side, in plain English, with your insurability report.</span></li>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 18px; padding: 28px; background: #FBFAF6; border: 1px solid #D6CEBE; border-radius: 2px">
+<h3 style="margin: 0; font-family: 'Cormorant Garamond', 'Times New Roman', serif; font-weight: 500; font-size: 30px; line-height: 1.1">Prefer to talk now?</h3>
+<p style="margin: 0; font-size: 16px; color: #4B4A43">Book a private consultation with Brandon by phone or video.</p>
+<a class="btn" href="{{calendly_url}}" target="_blank" rel="noopener" style="align-self: flex-start">Choose a time</a>
+</div>
+<a href="{{base}}/" style="font-size: 15px; font-weight: 500">Return to the home page</a>
+</section>
+
+</div>
+</main>
+{{> footer}}
+</div>

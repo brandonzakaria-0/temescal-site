@@ -1,0 +1,69 @@
+{
+  "index": {
+    "path": "/",
+    "title": "{{brand}} Insurance | Private-client home insurance for California wildfire country",
+    "description": "A licensed California brokerage for high-value homes. Your dedicated broker shops every market, explains your options in plain English, and shows you how to make your home easier to insure."
+  },
+  "how-it-works": {
+    "path": "/how-it-works/",
+    "title": "How it works | {{brand}} Insurance",
+    "description": "From your address to your options, with a licensed broker at every step. How we build your application, shop every market, and give you a plan for next year."
+  },
+  "buying-a-home": {
+    "path": "/buying-a-home/",
+    "title": "Home insurance before closing in a wildfire area | {{brand}} Insurance",
+    "description": "Your lender needs proof of insurance before you close. We work quietly to your closing date, across standard insurers, the FAIR Plan, and surplus lines."
+  },
+  "non-renewed": {
+    "path": "/non-renewed/",
+    "title": "Non-renewed? What to do next | {{brand}} Insurance",
+    "description": "A non-renewal is stressful, not the end of the road. Send us your notice and your dedicated broker will lay out every option while you still have time."
+  },
+  "fair-plan": {
+    "path": "/fair-plan/",
+    "title": "On the California FAIR Plan | {{brand}} Insurance",
+    "description": "The FAIR Plan mainly covers fire. Your broker reviews your coverage, explains the companion (DIC) policy, and looks for a path back to fuller coverage."
+  },
+  "rebuilding": {
+    "path": "/rebuilding/",
+    "title": "Rebuilding after the fires | {{brand}} Insurance",
+    "description": "If you're rebuilding in the Palisades, Altadena, or Malibu, let's talk about protecting what you're building, during construction and after you move in."
+  },
+  "make-your-home-insurable": {
+    "path": "/make-your-home-insurable/",
+    "title": "Make your home insurable | {{brand}} Insurance",
+    "description": "What insurers look at: roof, vents, the first five feet, defensible space, and hazard zone. Every client gets an insurability report and a hardening plan."
+  },
+  "partners": {
+    "path": "/partners/",
+    "title": "For realtors, lenders, and advisors | {{brand}} Insurance",
+    "description": "Don't let insurance hold up your closing. Refer a client and a licensed broker takes it from there, keeping you posted with your client's permission."
+  },
+  "about": {
+    "path": "/about/",
+    "title": "About | {{brand}} Insurance",
+    "description": "A licensed California brokerage for high-value homes in wildfire country, named for Temescal Canyon in Pacific Palisades."
+  },
+  "faq": {
+    "path": "/faq/",
+    "title": "FAQ | {{brand}} Insurance",
+    "description": "Plain answers about the FAIR Plan, surplus lines, hardening discounts, how we work, and what happens after you request a review."
+  },
+  "book-a-call": {
+    "path": "/book-a-call/",
+    "title": "Book a call | {{brand}} Insurance",
+    "description": "A private 30-minute call with your broker, by phone or video."
+  },
+  "request-a-review": {
+    "path": "/request-a-review/",
+    "title": "Request a private review | {{brand}} Insurance",
+    "description": "Tell us about your home. Your dedicated, licensed broker takes it from there.",
+    "header": false,
+    "body_class": "no-sticky-cta"
+  },
+  "legal": {
+    "path": "/legal/",
+    "title": "Licenses and disclosures | {{brand}} Insurance",
+    "description": "Licensing details, our role as a broker, and the surplus lines disclosure."
+  }
+}
