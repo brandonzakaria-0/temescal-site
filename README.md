@@ -33,7 +33,8 @@ so a rename or a new number is a one-line change.
 - `site_url`: the public address, used for canonical links, the sitemap and social previews. Change it when the
   custom domain is connected.
 - `base_path`: leave as `""` when the site is served from the root of a domain.
-- `show_advisers`: turns the advisers section on the About page on, once each adviser has agreed in writing.
+- `legal_name` and `location`: the licensee's legal name and principal place of business, used in the footer
+  disclosure and on the About and Legal pages. Update both when the agency entity is licensed.
 
 ## Photo credits (Unsplash License)
 

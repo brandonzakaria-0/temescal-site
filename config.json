@@ -4,10 +4,11 @@
   "phone_tel": "+13104158600",
   "email": "brandon@temescalinsurance.com",
   "license_individual": "4587203",
+  "legal_name": "Brandon Joshua Zakariaie",
+  "location": "Los Angeles, California",
   "calendly_url": "https://calendly.com/bzakaria-stanford/30min",
   "form_endpoint": "",
   "site_url": "https://temescal-site.pages.dev",
   "base_path": "",
-  "noindex": true,
-  "show_advisers": false
+  "noindex": true
 }

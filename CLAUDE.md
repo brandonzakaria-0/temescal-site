@@ -14,7 +14,7 @@ Deploy results show up as the "Workers Builds: temescal-site" check run on each 
 3. Commit sources and `docs/` together, then push to `main`.
 
 Site-wide values (brand name, phone, email, license number, Calendly link, form endpoint, site URL,
-`noindex` staging switch, `show_advisers`) live only in `config.json` and reach pages as `{{tokens}}`.
+`noindex` staging switch, licensee legal name, location) live only in `config.json` and reach pages as `{{tokens}}`.
 Use the tokens; do not hard-code those values in pages.
 
 ## Hard rules for all copy and content
@@ -28,7 +28,7 @@ Use the tokens; do not hard-code those values in pages.
   state guarantee fund.
 - No AI-generated photos or illustrations. Real licensed or commissioned photography only. No fire,
   smoke, or burned-home imagery.
-- Numbers need a documented source. Unproven pilot targets (response time, quote speed) stay in
-  [brackets] until Brandon approves a number.
+- Numbers need a documented source. Unproven pilot targets (response time, quote speed) stay off the
+  site until Brandon approves a number. No [bracketed] placeholders on any page (Brandon, Nov 2026).
 - Advisers, partners, insurer names or logos, and testimonials appear only with written permission.
 - Keep `noindex: true` until Brandon says the site is launching.

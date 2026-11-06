@@ -26,6 +26,8 @@ TOKENS = {
     'email': cfg['email'] or '[Email]',
     'email_address': cfg['email'],
     'license_individual': cfg['license_individual'],
+    'legal_name': cfg['legal_name'],
+    'location': cfg['location'],
     'calendly_url': cfg['calendly_url'],
 }
 
@@ -63,6 +65,8 @@ JSONLD = {
     'telephone': cfg['phone_tel'],
     'image': site + '/assets/img/og-image.jpg',
     'areaServed': {'@type': 'State', 'name': 'California'},
+    'address': {'@type': 'PostalAddress', 'addressLocality': 'Los Angeles', 'addressRegion': 'CA',
+                'addressCountry': 'US'},
     'founder': {'@type': 'Person', 'name': 'Brandon Zakaria'},
 }
 
