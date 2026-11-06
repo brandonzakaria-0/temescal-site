@@ -1,8 +1,10 @@
 # Temescal Insurance website
 
 Static marketing site for Temescal Insurance (working name), a licensed California insurance brokerage
-for high-value homes in wildfire country. Owner: Brandon Zakaria. Hosted on Cloudflare Pages from this
-repo's `docs/` folder; every push to `main` redeploys.
+for high-value homes in wildfire country. Owner: Brandon Zakaria. Hosted on Cloudflare Workers (static
+assets only, see `wrangler.jsonc`) from this repo's `docs/` folder; every push to `main` redeploys.
+Deploy results show up as the "Workers Builds: temescal-site" check run on each commit
+(`gh api repos/brandonzakaria-0/temescal-site/commits/<sha>/check-runs`).
 
 ## How to make a change
 

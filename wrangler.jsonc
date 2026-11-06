@@ -1,0 +1,11 @@
+// Cloudflare Workers config: serves the built static site in docs/.
+// No server code. Cloudflare runs `npx wrangler deploy` on every push to main.
+{
+  "name": "temescal-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./docs",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

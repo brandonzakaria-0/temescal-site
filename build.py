@@ -139,9 +139,6 @@ def main():
     urls = ''.join('  <url><loc>%s%s</loc></url>\n' % (site, m['path']) for m in pages.values())
     open(os.path.join(OUT, 'sitemap.xml'), 'w').write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + '</urlset>\n')
-    open(os.path.join(OUT, '.nojekyll'), 'w').write('')
-    if cfg.get('custom_domain'):
-        open(os.path.join(OUT, 'CNAME'), 'w').write(cfg['custom_domain'] + '\n')
     print('done ->', OUT)
 
 

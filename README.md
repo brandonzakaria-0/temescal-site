@@ -1,13 +1,14 @@
 # Temescal Insurance website
 
 Static site for Temescal Insurance (working name). Plain HTML, CSS and a little JavaScript, built by a
-small Python script with no dependencies. Cloudflare Pages serves the `docs/` folder (no build command; output directory `docs`).
+small Python script with no dependencies. Cloudflare Workers serves the `docs/` folder as static assets
+(`wrangler.jsonc`; no build command, deploy command `npx wrangler deploy`).
 
 ## Edit and publish
 
 1. Change what you need (see below).
 2. Run `python3 build.py`. It rebuilds `docs/`.
-3. Commit and push. Cloudflare Pages redeploys automatically in a minute or two.
+3. Commit and push. Cloudflare redeploys automatically in a minute or two.
 
 ## Where things live
 
