@@ -28,7 +28,7 @@ so a rename or a new number is a one-line change.
 ## Settings in config.json
 
 - `noindex`: `true` keeps search engines out while the site is in staging. Set to `false` at launch.
-- `form_endpoint`: where the private review and referral forms are sent (for example a Formspree form URL).
+- `form_endpoint`: where the wildfire review and referral forms are sent (for example a Formspree form URL).
   While it is empty, the forms show visitors your phone number and Calendly link instead of submitting.
 - `site_url`: the public address, used for canonical links, the sitemap and social previews. Change it when the
   custom domain is connected.
@@ -39,5 +39,5 @@ so a rename or a new number is a one-line change.
 ## Photo credits (Unsplash License)
 
 Home: Jessica Christian. How it works: Kellen Riggin. Buying a home: Jakub Zerdzicki. Non-renewed: Spencer DeMera.
-FAIR Plan: Julian Myles. Rebuilding: Hunter Owens. Make your home insurable: Don Stouder. Partners: GoodLifeConstruction.
+FAIR Plan: Julian Myles. Rebuilding: Hunter Owens. Wildfire hardening: Don Stouder. Partners: GoodLifeConstruction.
 About: Nick Mollenbeck. Portrait of Brandon Zakaria: supplied by Brandon.

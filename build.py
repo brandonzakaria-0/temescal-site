@@ -137,6 +137,10 @@ def main():
     open(os.path.join(OUT, '404.html'), 'w').write(layout('404', {
         'path': '/404.html', 'title': 'Page not found | {{brand}} Insurance',
         'description': 'Page not found.'}, nf))
+    # old URLs that moved
+    open(os.path.join(OUT, '_redirects'), 'w').write(
+        '/make-your-home-insurable/ /wildfire-hardening/ 301\n'
+        '/make-your-home-insurable /wildfire-hardening/ 301\n')
     # robots and sitemap
     robots = 'User-agent: *\nDisallow: /\n' if cfg['noindex'] else 'User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n' % site
     open(os.path.join(OUT, 'robots.txt'), 'w').write(robots)

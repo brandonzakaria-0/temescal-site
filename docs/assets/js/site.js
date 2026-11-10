@@ -1,4 +1,4 @@
-/* Temescal site scripts: header menus, the private review flow, and the referral form.
+/* Temescal site scripts: header menus, the wildfire review flow, and the referral form.
    Settings come from window.SITE, which the build writes from config.json. */
 (function () {
   'use strict';
@@ -59,7 +59,7 @@
     return 'Something went wrong sending your request. Please try again, call ' + call + ', or ' + book + '.';
   }
 
-  /* ---------- Private review flow ---------- */
+  /* ---------- Wildfire review flow ---------- */
   var review = document.querySelector('[data-form="review"]');
   if (review) {
     var steps = review.querySelectorAll('[data-step]');
@@ -104,7 +104,7 @@
       back.hidden = step === 0;
       spacer.hidden = step !== 0;
       var hasFile = fileInput && fileInput.files && fileInput.files.length;
-      next.textContent = step === TOTAL - 1 ? 'Request my private review' : (step === 4 && !hasFile ? 'Skip for now' : 'Continue');
+      next.textContent = step === TOTAL - 1 ? 'Request my wildfire review' : (step === 4 && !hasFile ? 'Skip for now' : 'Continue');
       if (step === 2) {
         var d = DATES[value('situation')] || DATES['Reviewing my coverage'];
         review.querySelector('[data-date-question]').textContent = d[0];
@@ -157,7 +157,7 @@
       send(fd).then(function (result) {
         next.disabled = false;
         if (result !== 'ok') {
-          next.textContent = 'Request my private review';
+          next.textContent = 'Request my wildfire review';
           showError(failureMessage(result), true);
           return;
         }

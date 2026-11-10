@@ -1,8 +1,8 @@
 {
   "index": {
     "path": "/",
-    "title": "{{brand}} Insurance | Home insurance for California homeowners",
-    "description": "A licensed California home insurance brokerage. Your dedicated broker shops every market, explains your options in plain English, and shows you how to make your home easier to insure."
+    "title": "{{brand}} Insurance | Wildfire home insurance and hardening in California",
+    "description": "A licensed California home insurance brokerage focused on wildfire risk. We show you which hardening steps insurers look for, help you document them for mitigation discounts, and shop every market for your coverage."
   },
   "how-it-works": {
     "path": "/how-it-works/",
@@ -29,10 +29,10 @@
     "title": "Rebuilding after the fires | {{brand}} Insurance",
     "description": "If you're rebuilding in the Palisades, Altadena, or Malibu, let's talk about protecting what you're building, during construction and after you move in."
   },
-  "make-your-home-insurable": {
-    "path": "/make-your-home-insurable/",
-    "title": "Make your home insurable | {{brand}} Insurance",
-    "description": "What insurers look at: roof, vents, the first five feet, defensible space, and hazard zone. Every client gets an insurability report and a hardening plan."
+  "wildfire-hardening": {
+    "path": "/wildfire-hardening/",
+    "title": "Wildfire home hardening | {{brand}} Insurance",
+    "description": "The wildfire upgrades California insurers look for: Class A roof, ember-resistant vents, the first five feet, defensible space, and more. See where your home stands."
   },
   "partners": {
     "path": "/partners/",
@@ -42,7 +42,7 @@
   "about": {
     "path": "/about/",
     "title": "About | {{brand}} Insurance",
-    "description": "A licensed California home insurance brokerage, named for Temescal Canyon in Pacific Palisades."
+    "description": "A licensed California home insurance brokerage focused on wildfire risk and home hardening, named for Temescal Canyon in Pacific Palisades."
   },
   "faq": {
     "path": "/faq/",
@@ -56,7 +56,7 @@
   },
   "request-a-review": {
     "path": "/request-a-review/",
-    "title": "Request a private review | {{brand}} Insurance",
+    "title": "Get your wildfire review | {{brand}} Insurance",
     "description": "Tell us about your home. Your dedicated, licensed broker takes it from there.",
     "header": false,
     "body_class": "no-sticky-cta"

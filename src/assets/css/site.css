@@ -48,7 +48,10 @@ details > summary svg { transition: transform 200ms ease; }
 }
 
 /* Responsive switches used by the header and the mobile action bar */
-@media (max-width: 860px) {
+@media (max-width: 1240px) {
+  .tm-hide-md { display: none !important; }
+}
+@media (max-width: 1000px) {
   .tm-hide-sm { display: none !important; }
   .tm-show-sm { display: block !important; }
   .tm-show-sm-flex { display: flex !important; }
