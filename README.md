@@ -40,4 +40,13 @@ so a rename or a new number is a one-line change.
 
 Home: Jessica Christian. How it works: Kellen Riggin. Buying a home: Jakub Zerdzicki. Non-renewed: Spencer DeMera.
 FAIR Plan: Julian Myles. Rebuilding: Hunter Owens. Wildfire hardening: Don Stouder. Partners: GoodLifeConstruction.
-About: Nick Mollenbeck. Portrait of Brandon Zakaria: supplied by Brandon.
+Portrait of Brandon Zakaria: supplied by Brandon.
+
+## Other photo credits
+
+- `pali-high-before.jpg`: Palisades Charter High School quad, August 8, 2023. Idéalités, Wikimedia Commons, CC0.
+  https://commons.wikimedia.org/wiki/File:Palisades_charter_high_school_yard.jpg
+- `pali-high-after-fire.jpg`: Burned buildings at Palisades Charter High School, February 15, 2025. Joseph Bruton,
+  U.S. Army Corps of Engineers, Los Angeles District. Public domain (U.S. government work, DVIDS image 8873414).
+  Use does not imply endorsement by the Army Corps of Engineers or the Department of Defense.
+  https://www.dvidshub.net/image/8873414/palisades-charter-high-school

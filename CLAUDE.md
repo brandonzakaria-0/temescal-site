@@ -27,7 +27,8 @@ Use the tokens; do not hard-code those values in pages.
 - Surplus lines copy must say these insurers are not licensed by California and not backed by the
   state guarantee fund.
 - No AI-generated photos or illustrations. Real licensed or commissioned photography only. No fire,
-  smoke, or burned-home imagery.
+  smoke, or burned-home imagery. One exception, at Brandon's request (Nov 2026): the About page shows
+  Palisades Charter High School before and after the fire as part of his story. No other page uses fire damage imagery.
 - Numbers need a documented source. Unproven pilot targets (response time, quote speed) stay off the
   site until Brandon approves a number. No [bracketed] placeholders on any page (Brandon, Nov 2026).
 - Advisers, partners, insurer names or logos, and testimonials appear only with written permission.
