@@ -1,7 +1,7 @@
 {
   "index": {
     "path": "/",
-    "title": "{{brand}} Insurance | Home insurance for California wildfire country",
+    "title": "{{brand}} Insurance | Home insurance for California homeowners",
     "description": "A licensed California home insurance brokerage. Your dedicated broker shops every market, explains your options in plain English, and shows you how to make your home easier to insure."
   },
   "how-it-works": {
@@ -42,7 +42,7 @@
   "about": {
     "path": "/about/",
     "title": "About | {{brand}} Insurance",
-    "description": "A licensed California home insurance brokerage for wildfire country, named for Temescal Canyon in Pacific Palisades."
+    "description": "A licensed California home insurance brokerage, named for Temescal Canyon in Pacific Palisades."
   },
   "faq": {
     "path": "/faq/",
